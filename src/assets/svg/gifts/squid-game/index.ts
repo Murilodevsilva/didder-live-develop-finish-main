@@ -1,0 +1,6 @@
+export * from './circle-gray'
+export * from './circle-red'
+export * from './square-gray'
+export * from './square-red'
+export * from './triangle-gray'
+export * from './triangle-red'

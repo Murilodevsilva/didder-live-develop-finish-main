@@ -1,0 +1,7 @@
+npx eas build -p android --profile preview
+
+
+headers: src/components/headers
+modals: src/components/modals (selecionar país), o restante pode pegar em src/screens/profile/edit-profile
+radio-button e variante: src/components/radio-button
+componente selecionar opção um ou dois: src/screens/profile/settings

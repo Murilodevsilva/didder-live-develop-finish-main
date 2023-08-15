@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Didder Live",
+    "slug": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/didder-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-didder.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#232a4a"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.didderlive.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon-didder.png",
+        "backgroundColor": "#ac19ac",
+        "softwareKeyboardLayoutMode": "pan"
+      },
+      "package": "com.heitorurbanetz.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "expo": {
+        "modules": [
+          "react-native-gesture-handler"
+        ]
+      },
+      "eas": {
+        "projectId": "2cb9309d-e3e1-4464-9750-c3629a02c58f"
+      }
+    },
+    "sdkVersion": "47.0.0"
+  },
+  "name": "didder"
+}
